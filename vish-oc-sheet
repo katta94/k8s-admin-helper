@@ -1,0 +1,7 @@
+oc login
+oc get pods
+oc get service /svc
+oc get dc 
+
+oc describe pod <name of pod>
+
