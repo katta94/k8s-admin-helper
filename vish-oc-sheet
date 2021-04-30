@@ -7,5 +7,5 @@ oc describe pod <name of pod>
 
 oc delete pod --field-selector=status.phase==Succeeded ----> this removes all pods with status completed or succeeded.
 
-
+oc get dc abc -o yaml  ----> to check all details about dc
 
