@@ -1,0 +1,18 @@
+oc login
+oc get pods
+oc get service /svc
+oc get dc 
+
+oc describe pod <name of pod>
+
+oc delete pod --field-selector=status.phase==Succeeded ----> this removes all pods with status completed or succeeded.
+
+oc get dc abc -o yaml  ----> to check all details about dc
+
+kubectl describe pod 
+
+kubectl top pod <pod_name>  ----this give cpu, memory usage of the pod
+
+kubectl describe pod <pod_name> | grep "restart count" -A 8  ----- this gives cpu, memory details
+
+kubectl get deployments <Deployment_name> -o yaml | grep "resources" -A 8 ----- this gives cpu, memory details 
