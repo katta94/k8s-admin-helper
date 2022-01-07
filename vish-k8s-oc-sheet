@@ -11,6 +11,8 @@ oc get dc abc -o yaml  ----> to check all details about dc
 
 kubectl describe pod 
 
+kubectl get pod -o wide ----this gives ip address of pods and some other details
+
 kubectl scale deploy <deployment_name> --replicas=0
 
 kubectl top pod <pod_name>  ----this give cpu, memory usage of the pod
