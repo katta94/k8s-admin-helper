@@ -9,6 +9,8 @@ oc delete pod --field-selector=status.phase==Succeeded ----> this removes all po
 
 oc get dc abc -o yaml  ----> to check all details about dc
 
+kubectx --> to select the context of different kubernetes cluster 
+
 kubectl describe pod 
 
 kubectl get pod -o wide ----this gives ip address of pods and some other details
